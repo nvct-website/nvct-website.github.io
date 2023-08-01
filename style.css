@@ -35,6 +35,11 @@
   font-family: sans-serif;
 }
 
+.text {
+  font-size: 5rem;
+  font-family: sans-serif
+}
+
 .slideText {
   -webkit-animation: slide-up;
   animation: slide-up;
