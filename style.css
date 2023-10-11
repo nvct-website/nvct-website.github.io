@@ -103,3 +103,15 @@
     -webkit-filter: saturate(150%) hue-rotate(-35deg);
   }
 }
+
+.footer { 
+    position: fixed; 
+    top: 90%; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    background: #fff; 
+    border-top: 2px solid #000;
+
+    min-width: 200px;
+} 
