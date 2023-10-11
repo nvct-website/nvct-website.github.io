@@ -1,4 +1,3 @@
-<link href="style.css" rel="stylesheet">
 <title>Noahvocat | Ilerio</title>
 # Ilerio
 
