@@ -96,6 +96,7 @@
   height: 800px;
   background: linear-gradient(30deg, #0ecda0 0%,#3583db 100%);
   -webkit-animation: adjustHue 10s infinite; 
+  background-size: cover;
 }
 
 @-webkit-keyframes adjustHue {
