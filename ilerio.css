@@ -1,0 +1,103 @@
+body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	background: linear-gradient(30deg, #0ecda0, #3583db) no-repeat center center fixed;
+}
+
+.smallText {
+	font-size: 10px;
+	font-family: sans-serif;
+	position: absolute;
+	bottom: 1.5em;
+	right: 1vw;
+}
+
+p {
+	text-indent: 5em
+}
+
+.container {
+	width: 100vw;
+	min-height: 100vh;
+	overflow: scroll;
+	> h1 {
+		font-size: 2em;
+		text-align: center;
+		> span {
+			text-decoration: underline black wavy 0.05em;
+		}
+	}
+}
+
+@-webkit-keyframes adjustHue {
+	50% {
+		-webkit-filter: saturate(150%) hue-rotate(-35deg);
+	}
+}
+
+nav {
+	height: 3em;
+	background-color: rgba(50, 50, 50, .3);
+	padding: 0.5em;
+	display: flex;
+	justify-content: space-between;
+	> * {
+		max-height: 2.9em;
+	}
+}
+
+nav:hover {
+	background-color: rgba(50, 50, 50, .5);
+}
+
+@keyframes move_wave {
+	0% {
+		transform: translateX(0) scaleY(1);
+	}
+	50% {
+		transform: translateX(-15%) scaleY(0.55);
+	}
+	100% {
+		transform: translateX(-30%) scaleY(1);
+	}
+}
+
+.waveWrapper {
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+}
+
+.wave {
+	position: absolute;
+	left: 0;
+	width: 150%;
+	background-repeat: repeat;
+	transform-origin: center bottom;
+}
+
+.waveTop {
+	background-size: 30% 13vh;
+	height: 13vh;
+	top: 87vh;
+	animation: move_wave 7s linear infinite;
+}
+
+.waveMiddle {
+	background-size: 30% 15vh;
+	height: 15vh;
+	top: 85vh;
+	animation: move_wave 10s linear infinite;
+}
+
+.waveBottom {
+	background-size: 30% 13vh;
+	height: 13vh;
+	top: 87vh;
+	animation: move_wave 15s linear infinite;
+}
