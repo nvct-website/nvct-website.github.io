@@ -2,37 +2,49 @@
 <html lang="fr">
 
 	<head>
-		<meta charset="utf-8">
+		<style>
+			.topnav {
+			  overflow: hidden;
+			  background-color: #04042c;
+			}
+			
+			.topnav a {
+			  float: left;
+			  color: #ffffff;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  font-size: 17px;
+			  font-family: sans-serif;
+			}
+			
+			.topnav a:hover {
+			  background-color: #ffffff;
+			  color: #04042c;
+			}
+			
+			.topnav a.active {
+			  background-color: #04046b;
+			  color: white;
+			}
+		</style>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Ilerio</title>
 		<link rel="stylesheet" href="ilerio.css">
-		<script src="index.js"></script>
 		<link rel="icon" type="image/x-icon" href="images/IlerioIcon.png">
 	</head>
 
 	<body>
-		<nav>
-			<img src="images/IlerPub.png"/>
-			<img src="images/IlerCode.png"/>
-			<img src="images/IlerioLogo.png"/>
-			<img src="images/IlerGFX.png"/>
-		</nav>
-		<div class="container">
-			<h1>Bienvenue chez<br><span>Ilerio</span></h1>
-			<br>
-			<p>Le site est en développement... Il arrive bientôt !</p>
+		<div class="topnav">
+			<img src="images/IlerioLogo.png" href="https://noahvocat.is-a.dev/ilerio" width="90" height="50"/>
+			<a href="https://noahvocat.is-a.dev/">Back to Noahvocat's Website</a>
 		</div>
-		<div class="waveWrapper waveAnimation">
-			<div class="waveWrapperInner bgTop">
-				<div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
-			</div>
-			<div class="waveWrapperInner bgMiddle">
-				<div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
-			</div>
-			<div class="waveWrapperInner bgBottom">
-				<div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
-			</div>
-			<div class="smallText">Fait avec le ❤ par les Développeurs de chez Ilerio</div>
+		</div>
+			<p class="bigText">Lorem ipsum.</p>
+			<p class="mediumText">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+
+			<div class="devNoteText">Fait avec le ❤ par les Développeurs de Ilerio</div>
+
 		</div>
 	</body>
 </html>

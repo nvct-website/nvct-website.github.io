@@ -1,20 +1,50 @@
 body {
-	padding: 0;
 	margin: 0;
 	overflow: hidden;
-	background: linear-gradient(30deg, #0ecda0, #3583db) no-repeat center center fixed;
+	background-color: #04046b;
 }
 
-.smallText {
+.devNoteText {
+	margin-top: 5px ;
+	margin-bottom: 5px ;
 	font-size: 10px;
 	font-family: sans-serif;
 	position: absolute;
+	color: rgb(0, 0, 0);
 	bottom: 1.5em;
 	right: 1vw;
 }
 
+.smallText {
+	margin-top: 5px ;
+	margin-bottom: 5px ;
+	font-size: 10px;
+	font-family: sans-serif;
+	position: absolute;
+	color: white;
+}
+
+.bigText {
+	margin-top: 5px ;
+	margin-bottom: 5px ;
+	text-indent: 2em;
+	font-size: 50px;
+	font-family: sans-serif;
+	color: white;
+}
+
+.mediumText {
+	margin-top: 5px ;
+	margin-bottom: 5px ;
+	text-indent: 4em;
+	font-size: 25px;
+	font-family: sans-serif;
+	color: white;
+}
+
 p {
-	text-indent: 5em
+	text-indent: 5em;
+	font-family: sans-serif;
 }
 
 .container {
