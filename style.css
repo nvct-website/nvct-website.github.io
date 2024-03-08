@@ -94,7 +94,6 @@
 .container {
   width: 100%;
   height: 800px;
-  background: linear-gradient(30deg, #0ecda0 0%,#3583db 100%) no-repeat center center fixed;
 }
 
 @-webkit-keyframes adjustHue {
