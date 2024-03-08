@@ -47,19 +47,6 @@ p {
 	font-family: sans-serif;
 }
 
-.container {
-	width: 100vw;
-	min-height: 100vh;
-	overflow: scroll;
-	> h1 {
-		font-size: 2em;
-		text-align: center;
-		> span {
-			text-decoration: underline black wavy 0.05em;
-		}
-	}
-}
-
 @-webkit-keyframes adjustHue {
 	50% {
 		-webkit-filter: saturate(150%) hue-rotate(-35deg);
