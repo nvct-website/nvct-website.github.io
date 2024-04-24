@@ -1,2 +1,4 @@
-# nvct-website.github.io
-Repo of the website
+# noahvocat.is-a.dev
+Home of FrenchGuy's website
+
+https://github.com/noahvocat/
