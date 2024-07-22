@@ -72,6 +72,16 @@
         .card p {
             color: #ffffff;
         }
+        .inline-elements {
+            display: flex;
+            align-items: center;
+        }
+        .inline-elements img {
+            margin-right: 10px;
+        }
+        .inline-elements iframe {
+            flex: 1;
+        }
     </style>
 </head>
 <body>
@@ -89,7 +99,10 @@
           <h2>Welcome to my lil' corner on the internet!</h2>
           <p>You landed on FrenchGuy's website!</p>
           <p>Go check out my social media, if you want to.</p>
-          <p>Check on the navbar above for something that can interest you!</p>
+          <div class="inline-elements">
+            <img src="anybrowser.gif" alt="Image" height="40px">
+            <iframe src="https://john.citrons.xyz/embed?ref=https://noahvocat.is-a.dev" style="max-width:732px;width:183px;height:50px;border:none;"></iframe>
+          </div>
         </div>
     </div>
     <div class="footer">
