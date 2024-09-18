@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odyssey Webring</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,6 +17,7 @@
             background-color: #333;
             color: #fff;
             padding: 1rem;
+            text-align: center;
         }
 
         nav ul {
@@ -48,15 +51,26 @@
     </style>
 </head>
 <body>
-    <header>
-        <a><img src="images/odyssey.png"></a>
-        <nav>
-            <ul>
-                <li><a href="https://noahvocat.is-a.dev">Back to FrenchGuy's Website</a></li>
-                <li><a href="https://discord.gg/fVW9ejPHgn">Discord</a></li>
-            </ul>
-        </nav>
-    </header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://noahvocat.is-a.dev/odyssey"><img src="images/odyssey.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a href="https://noahvocat.is-a.dev">Back to FrenchGuy's Website</a>&nbsp&nbsp&nbsp
+      </div>
+      <div class="navbar-nav">
+        <a href="https://discord.gg/fVW9ejPHgn">Discord</a>&nbsp&nbsp&nbsp
+      </div>
+      <div class="navbar-nav">
+        <a href="odyssey/members.html">Members</a>&nbsp&nbsp&nbsp
+      </div>
+    </div>
+  </div>
+</nav>
+
     <main>
         <div id='odyssey'>
             <script type="text/javascript" src="https://odysseywebring.netlify.app/onionring-variables.js"></script>
@@ -65,6 +79,9 @@
                   
         <section>
             <h2>Welcome to Odyssey!</h2>
+            <p>Odyssey is a webring created by FrenchGuy and <a href="https://scovings.github.io">Scovinq</a></p>
+            <h2>What is a webring?</h2>
+            <p>A webring (or web ring) is a collection of websites linked together in a circular structure, and usually organized around a specific theme, often educational or social. They were popular in the 1990s and early 2000s, particularly among amateur websites. -Wikipedia</p>
                 <h2>Rules</h2>
                 <ul>1. Websites must be kid friendly!</ul>
                 <ul>2. Websites must not contain viruses</ul>
@@ -72,11 +89,6 @@
             <h2>Joining</h2>
             <p>To join, please create an "add to webring" ticket on Discord with a similar message to the following:</p>
             <code>Hello! I am the owner of [website link] and I would like to join Odyssey.</code>
-            <h2>Members</h2>
-            <div id='index'>
-                <script type="text/javascript" src="https://odysseywebring.netlify.app/onionring-variables.js"></script>
-                <script type="text/javascript" src="https://odysseywebring.netlify.app/onionring-index.js"></script>
-            </div>
             <iframe src="https://john.citrons.xyz/embed?ref=noahvocat.is-a.dev" style="margin-left:auto;display:block;margin-right:auto;max-width:732px;width:100%;height:94px;border:none;"></iframe>
             <p>EST. September 15th 2024</p>
         </section>
