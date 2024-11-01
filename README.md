@@ -1,5 +1,4 @@
-# frenchguy.is-a.dev
-Home of FrenchGuy's website
+![Group 116](https://github.com/user-attachments/assets/bb340f44-372d-4e29-a14f-260b1eb923a1)
 
 Feel free to fork this repo!
 
