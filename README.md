@@ -1,4 +1,4 @@
-![Group 116](https://github.com/user-attachments/assets/bb340f44-372d-4e29-a14f-260b1eb923a1)
+![Group 116(2)](https://github.com/user-attachments/assets/2159dfcc-f91e-485b-add3-804c1430cf5d)
 
 Feel free to fork this repo!
 
