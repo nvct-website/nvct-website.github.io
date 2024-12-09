@@ -8,3 +8,7 @@ Disallow: /CNAME
 Allow: /index.html
 Allow: /ilerio.html
 Allow: /esg.html
+Allow: /repo.html
+Allow: /mclayout.html
+Allow: /odyssey.html
+Allow: /arbistan.html
