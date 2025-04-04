@@ -47,16 +47,11 @@
       </div>
     </div>
   </div>
-  <br>
-  <br>
-  <div id="container">
-    <a href="youtube.html">YouTube</a>
-    <a href="https://bsky.app/profile/seqyu.is-a.dev">BlueSky</a>
-    <a href="https://x.com/@seqyu_">Twitter</a>
-    <a href="https://discord.gg/vw4PDY9gz5">Discord Server</a>
-    <a href="https://github.com/seqyu">GitHub</a>
-    <br>
-    <a>The universe is full of wonders.</a>
-  </div>
+  <div id="footer-placeholder"></div>
+  <script>
+    $.get("footer.html", function(data){
+        $("#footer-placeholder").replaceWith(data);
+    });
+  </script>
 </body>
 </html>

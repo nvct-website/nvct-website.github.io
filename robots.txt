@@ -4,6 +4,7 @@ Disallow: /404.html
 Disallow: /soon.html
 Disallow: /README.md
 Disallow: /test.html
+Disallow: /template.html
 Disallow: /CNAME
 Allow: /index.html
 Allow: /repo.html
