@@ -2,7 +2,7 @@
 
 Feel free to fork this repo!
 
-(please credit me if you use an entire page :3)
-https://github.com/noahvocat/
+credit gud btw so feel free to link my github or something somewhere if u do take stuff, no pressure :3
+https://github.com/Ayulume/
 
-https://Ayulume.is-a.dev
+https://ayulume.is-a.dev
