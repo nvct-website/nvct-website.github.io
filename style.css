@@ -8,6 +8,15 @@ body {
   height: 100vh;
 }
 
+#container #dsring {
+  max-width: 100%;
+  overflow-x: auto; /* optional: adds scroll if too wide */
+}
+#container #dsring iframe, #container #dsring div {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
 h1 {
   font-size: 48px;
   color: #00ffcc;
