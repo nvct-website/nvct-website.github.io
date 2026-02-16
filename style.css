@@ -8,11 +8,11 @@ body {
   height: 100vh;
 }
 
-#container #dsring {
+#container #dsring, #container #odyssey {
   max-width: 100%;
   overflow-x: auto; /* optional: adds scroll if too wide */
 }
-#container #dsring iframe, #container #dsring div {
+#container #dsring iframe, #container #dsring div, #container #odyssey{
   width: 100% !important;
   max-width: 100% !important;
 }
