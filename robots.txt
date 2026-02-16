@@ -3,6 +3,7 @@ Disallow: /robots.txt
 Disallow: /404.html
 Disallow: /soon.html
 Disallow: /README.md
+Disallow: /redirect.html
 Disallow: /test.html
 Disallow: /template.html
 Disallow: /CNAME
