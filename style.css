@@ -10,7 +10,7 @@ body {
 
 #container #dsring, #container #odyssey {
   max-width: 100%;
-  overflow-x: auto; /* optional: adds scroll if too wide */
+  overflow-x: auto;
 }
 #container #dsring iframe, #container #dsring div, #container #odyssey{
   width: 100% !important;
