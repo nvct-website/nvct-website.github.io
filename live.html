@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soon(tm) - Ayulume's website</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        body.rickrolled {
+            background: url('images/rickroll-roll.gif');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="glitch">Coming Soon™</h1>
+        <p id="message">Live360 arrive bientôt sur Seqyusphere Channel !</p>
+        <a href="index.html">Je retourne à l'accueil !</a>
+        <br><br>
+        <a onclick="changeMessage()">Roh mais pourquoi pas maintenant ???</a>
+
+        <div style="text-align:center; margin-top:20px;">
+            <h3 style="color:white">En attendant qu'on prenne l'antenne pour le podcast, voici une Johnvertisement</h3>
+            <iframe src="https://john.citrons.xyz/embed?ref=https://Ayulume.is-a.dev" style="margin-left:auto;display:block;margin-right:auto;max-width:798px;width:100%;height:94px;border:none;"></iframe>
+        </div>
+    </div>
+
+    <!-- Hidden audio element -->
+    <audio id="rickroll-audio" src="files/rickroll.mp3"></audio>
+
+    <script>
+        let clickCount = 0;
+
+        function changeMessage() {
+            clickCount++;
+            const message = document.getElementById('message');
+            const audio = document.getElementById('rickroll-audio');
+
+            if (clickCount === 1) {
+                message.textContent = "Dude, just click that damn back to home page button";
+            } else if (clickCount === 2) {
+                message.textContent = "Just click on the damn button!";
+            } else {
+                message.textContent = "You asked for it";
+                document.body.classList.add('rickrolled');
+                audio.play();
+            }
+        }
+    </script>
+</body>
+</html>
