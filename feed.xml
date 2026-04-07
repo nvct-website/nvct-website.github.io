@@ -8,17 +8,17 @@
     <lastBuildDate>07 Apr 2026 00:00:00 GMT</lastBuildDate>
 
     <item>
-      <title>Ayu's Web Site Updates</title>
-      <description>This feed will be used as some update log for my website.</description>
-      <pubDate>07 Apr 2026 00:00:00 GMT</pubDate>
-      <guid>https://ayulume.is-a.dev/index.html?fuckyou=1</guid>
-    </item>
-
-    <item>
       <title>Huge update! Ayu's Web Site 4.1</title>
       <description><![CDATA[<p>+ New home page layout<br/>+ Added this RSS feed<br/>More to come later!</p>]]></description>
       <pubDate>07 Apr 2026 00:00:01 GMT</pubDate>
       <guid>https://ayulume.is-a.dev/index.html?fuckyou=2</guid>
+    </item>
+
+    <item>
+      <title>Ayu's Web Site Updates</title>
+      <description>This feed will be used as some update log for my website.</description>
+      <pubDate>07 Apr 2026 00:00:00 GMT</pubDate>
+      <guid>https://ayulume.is-a.dev/index.html?fuckyou=1</guid>
     </item>
 
   </channel>
