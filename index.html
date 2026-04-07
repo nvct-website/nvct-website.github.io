@@ -30,68 +30,95 @@
   </script>
   <br>
   <br>
-  <div id="container">
-    <h2>Welcome to my web site!</h2>
-    <!-- Hit counter -->
-    <script type="text/javascript" src="https://counter.websiteout.com/js/6/0/420/0"></script>
-  </div>
-    <br>
-    <br>
-
-    <!-- buttons -->
-    <div id="buttons">
-      <img src="images/buttons/anybrowser.gif">
-      <img src="images/buttons/bestview.gif">
-      <img src="images/buttons/pan.png">
-      <a href="https://status.cafe"><img src="https://status.cafe/assets/button.png" alt="Status Cafe"/></a>
-      <img src="images/buttons/blahaj.png">
-      <img src="images/buttons/88x31blank 4.png">
-      <a href="https://www.protogenposting.com/"><img src="images/buttons/gay.gif"></a>
-      <img src="images/buttons/internet.gif">
-      <a href="http://notre.savoie.free.fr/"><img src="images/buttons/savouê.gif"></a>
-      <a href="https://mabsland.com/Adoption.html"><img src="http://www.mabsland.com/Pandas/Censor_14c.gif"></a>
-      <a href="https://electron271.gay"><img src="https://electron271.gay/88x31/badgev1.webp"></a>
-    </div>
-  </div>
-  <br>
-  <br>
-
-  <!-- projects -->
-  <div id="container">
-    <h2>Projects</h2>
-  </div>
-  <br>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-5">
-          <div class="project-card">
-            <h2 class="project-title">Seqyusphere</h2>
-            <p class="project-description">Free and privacy respectful services</p>
+  <div id="page-grid">
+    <div id="left-col">
+        <!-- Updates -->
+         <div id="container" id="update-feed"></div>
+          <script>
+            const RSS_URL = "https://ayulume.is-a.dev/feed.xml";
+            fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(RSS_URL)}`)
+              .then(r => r.json())
+              .then(data => {
+                const container = document.getElementById("update-feed");
+                container.innerHTML = data.items.map(item => `
+                  <article>
+                    <h3><a href="${item.link}">${item.title}</a></h3>
+                    <p>${item.pubDate}</p>
+                    <p>${item.description}</p>
+                  </article>
+                `).join("");
+              });
+          </script>
+          <br>
+          <br>
+        <!-- buttons -->
+        <div id="container">
+          <div id="buttons">
+            <img src="images/buttons/anybrowser.gif">
+            <img src="images/buttons/bestview.gif">
+            <img src="images/buttons/pan.png">
+            <a href="https://status.cafe"><img src="https://status.cafe/assets/button.png" alt="Status Cafe"/></a>
+            <img src="images/buttons/blahaj.png">
+            <img src="images/buttons/88x31blank 4.png">
+            <a href="https://www.protogenposting.com/"><img src="images/buttons/gay.gif"></a>
+            <img src="images/buttons/internet.gif">
+            <a href="http://notre.savoie.free.fr/"><img src="images/buttons/savouê.gif"></a>
+            <a href="https://mabsland.com/Adoption.html"><img src="http://www.mabsland.com/Pandas/Censor_14c.gif"></a>
+            <a href="https://electron271.gay"><img src="https://electron271.gay/88x31/badgev1.webp"></a>
           </div>
         </div>
+        <br>
+        <br>
+    </div>
+
+    <div id="center-col">
+        <div id="container">
+        <h2>Welcome to my web site!</h2>
+        <!-- Hit counter -->
+        <script type="text/javascript" src="https://counter.websiteout.com/js/6/0/420/0"></script>
+      </div>
+        <br>
+        <br>
+
+      <!-- projects -->
+      <div id="container">
+        <h2>Projects</h2>
+      </div>
+      <br>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-5">
+              <div class="project-card">
+                <h2 class="project-title">Seqyusphere</h2>
+                <p class="project-description">Free and privacy respectful services</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+      <!-- blog -->
+      <div id="container">
+        <p><a href="https://blog.seqyusphere.eu/">My blog</a> is coming back soon!</p>
+      </div>
+      <br>
+        </div>
+
+    <div id="right-col">
+      <!-- guestbook and button -->
+      <div id="container">
+        <h2>Guestbook</h2>
+        <a href="https://ayulume.atabook.org/">Don't forget to sign my guestbook!</a>
+        <br><br>
+
+        <h2>Button</h2>
+        <p>Don't forget to add my button on your web site! :D</p>
+        <pre><code>&lt;a href="https://ayulume.is-a.dev"&gt;&lt;img src="images/buttons/button.gif"&gt;&lt;/a&gt;</code></pre>
+        <a href="https://ayulume.is-a.dev"><img src="images/buttons/button.gif"></a>
       </div>
     </div>
-    <br>
-
-  <!-- guestbook and button -->
-  <div id="container">
-    <h2>Guestbook</h2>
-    <a href="https://ayulume.atabook.org/">Don't forget to sign my guestbook!</a>
-    <br><br>
-
-    <h2>Button</h2>
-    <p>Don't forget to add my button on your web site! :D</p>
-    <pre><code>&lt;a href="https://ayulume.is-a.dev"&gt;&lt;img src="images/buttons/button.gif"&gt;&lt;/a&gt;</code></pre>
-    <a href="https://ayulume.is-a.dev"><img src="images/buttons/button.gif"></a>
   </div>
-  <br>
-  <br>
 
-  <!-- blog -->
-  <div id="container">
-    <p>Check out <a href="https://blog.seqyusphere.eu/">my blog</a>! (coming back Soon™)</p>
-  </div>
-  <br>
 
   <!-- footer -->
   <div id="footer-placeholder"></div>
@@ -103,7 +130,7 @@
   <br>
 
   <!-- webrings, johnvert and other bullshit -->
-  <div id="container">
+  <div id="webringcontainer">
     <div id='odyssey'>
       <script type="text/javascript" src="https://odysseywebring.netlify.app/onionring-variables.js"></script>
       <script type="text/javascript" src="https://odysseywebring.netlify.app/onionring-widget.js"></script>
