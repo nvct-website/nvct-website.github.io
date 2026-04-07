@@ -33,9 +33,10 @@
   <div id="page-grid">
     <div id="left-col">
       <!--Updates-->
+      <a href="changelog.xml"><img src="images/buttons/rss.png"></a>
       <div id="update-feed"></div>
       <script>
-        const RSS_URL = "https://ayulume.is-a.dev/feed.xml";
+        const RSS_URL = "https://ayulume.is-a.dev/changelog.xml/";
 
         fetch(RSS_URL)
           .then(r => r.text())
@@ -56,7 +57,7 @@
                 </article>`;
             }).join("");
           })
-          .catch(err => console.error("Feed error:", err));
+          .catch(err => console.error("Unable to load feed properly:", err));
       </script>
           <br>
           <br>
