@@ -32,23 +32,33 @@
   <br>
   <div id="page-grid">
     <div id="left-col">
-        <!-- Updates -->
-         <div id="update-feed"></div>
-          <script>
-            const RSS_URL = "https://ayulume.is-a.dev/feed.xml";
-            fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(RSS_URL)}`)
-              .then(r => r.json())
-              .then(data => {
-                const container = document.getElementById("update-feed");
-                container.innerHTML = data.items.map(item => `
-                  <article>
-                    <h3><a href="${item.link}">${item.title}</a></h3>
-                    <p>${item.pubDate}</p>
-                    <p>${item.description}</p>
-                  </article>
-                `).join("");
-              });
-          </script>
+      <!--Updates-->
+      <div id="update-feed"></div>
+      <script>
+        const RSS_URL = "https://ayulume.is-a.dev/feed.xml";
+
+        fetch(RSS_URL)
+          .then(r => r.text())
+          .then(str => new DOMParser().parseFromString(str, "application/xml"))
+          .then(xml => {
+            const items = [...xml.querySelectorAll("item")];
+            const container = document.getElementById("update-feed");
+            container.innerHTML = items.map(item => {
+              const title = item.querySelector("title")?.textContent ?? "";
+              const link  = item.querySelector("link")?.textContent ?? "#";
+              const date  = item.querySelector("pubDate")?.textContent ?? "";
+              const desc  = item.querySelector("description")?.textContent ?? "";
+              return `
+                <article>
+                  <h3><a href="${link}">${title}</a></h3>
+                  <p>${new Date(date).toLocaleDateString()}</p>
+                  <p>${desc}</p>
+                </article>`;
+            }).join("");
+          })
+          .catch(err => console.error("Feed error:", err));
+      </script>
+          <br>
           <br>
         <!-- buttons -->
         <div id="container">
