@@ -66,6 +66,17 @@ a {
   box-sizing: border-box;
 }
 
+#update-feed {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid #ff00ff;
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 15px #00ffcc;
+  text-align: center;
+  box-sizing: border-box;
+}
+
 #sidebar {
   float: left;
   width: 30%;

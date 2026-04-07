@@ -33,7 +33,7 @@
   <div id="page-grid">
     <div id="left-col">
         <!-- Updates -->
-         <div id="container" id="update-feed"></div>
+         <div id="update-feed"></div>
           <script>
             const RSS_URL = "https://ayulume.is-a.dev/feed.xml";
             fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(RSS_URL)}`)
@@ -49,7 +49,6 @@
                 `).join("");
               });
           </script>
-          <br>
           <br>
         <!-- buttons -->
         <div id="container">
