@@ -22,7 +22,7 @@
   <br>
 
   <!-- nav -->
-  <div id="nav-placeholder">Loading RSS feed...</div>
+  <div id="nav-placeholder">Loading navbar...</div>
   <script>
     $.get("nav.html", function(data){
         $("#nav-placeholder").replaceWith(data);
@@ -34,7 +34,7 @@
     <div id="left-col">
       <!--Updates-->
       <a href="changelog.xml"><img src="images/buttons/rss.png"></a>
-      <div id="update-feed"></div>
+      <div id="update-feed">Loading RSS feed...</div>
       <script>
         const RSS_URL = "https://ayulume.is-a.dev/changelog.xml";
 
@@ -132,7 +132,7 @@
 
 
   <!-- footer -->
-  <div id="footer-placeholder"></div>
+  <div id="footer-placeholder">Loading footer...</div>
   <script>
     $.get("footer.html", function(data){
         $("#footer-placeholder").replaceWith(data);
