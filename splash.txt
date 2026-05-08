@@ -28,3 +28,4 @@ MURI MURI!
 sung jin woo in sister leveling
 The splashtext is a lie
 Friday night fuck you
+$ curl https://ayulume.is-a.dev/index.sh
