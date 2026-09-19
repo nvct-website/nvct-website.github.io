@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Ayu's Life Updates or something(tm)</title>
+    <link>https://ayulume.is-a.dev/</link>
+    <description>Silly shit blog, only the date is accurate, the time isn't...</description>
+    <language>en-us</language>
+    <lastBuildDate>07 Apr 2026 00:00:00 GMT</lastBuildDate>
+
+    <item>
+      <title>Hello, world!</title>
+      <description><![CDATA[<p>Hi uh i guess i have blog now it's cool, prob not gonna be very active, it sucks i cant add images or something, i'm just editing a damn xml file manually lol, oh well ig it works! rss :3</p>]]></description>
+      <pubDate>20 Sep 2026 00:00:01 GMT</pubDate>
+      <guid>https://ayulume.is-a.dev/index.html?loveyou=0</guid>
+    </item>
+
+  </channel>
+</rss>
