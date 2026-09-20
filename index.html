@@ -64,6 +64,22 @@
         <!-- buttons -->
         <div id="container">
           <div id="buttons">
+            <h3>Link back?</h3>
+            <p>Click to copy</p>
+            <a id="copy-link"><img src="images/buttons/button.gif"></a>
+<script>
+  document.getElementById("copy-link").addEventListener("click", async (event) => {
+    event.preventDefault();
+
+    try {
+      await navigator.clipboard.writeText("<a href=\"https://ayulume.is-a.dev/\"><img src=\"https://ayulume.is-a.dev/images/buttons/button.gif\"></a>");
+      console.log("Copied!");
+    } catch (err) {
+      console.error("Failed to copy:", err);
+    }
+  });
+</script>
+            <hr>
             <img src="images/buttons/anybrowser.gif">
             <img src="images/buttons/bestview.gif">
             <img src="images/buttons/pan.png">
@@ -72,7 +88,7 @@
             <img src="images/buttons/88x31blank 4.png">
             <a href="https://www.protogenposting.com/"><img src="images/buttons/gay.gif"></a>
             <img src="images/buttons/internet.gif">
-            <a href="http://notre.savoie.free.fr/"><img src="images/buttons/savouê.gif"></a>
+            <a href="http://savoie-gouv.org/"><img src="images/buttons/savouê.gif"></a>
             <a href="https://mabsland.com/Adoption.html"><img src="http://www.mabsland.com/Pandas/Censor_14c.gif"></a>
             <a href="https://electron271.gay"><img src="https://electron271.gay/88x31/badgev1.webp"></a>
           </div>
@@ -121,11 +137,13 @@
         <h2>Guestbook</h2>
         <a href="https://ayulume.atabook.org/">Don't forget to sign my guestbook!</a>
         <br><br>
-
-        <h2>Button</h2>
-        <p>Don't forget to add my button on your web site! :D</p>
-        <pre><code>&lt;a href="https://ayulume.is-a.dev"&gt;&lt;img src="https://ayulume.is-a.dev/images/buttons/button.gif"&gt;&lt;/a&gt;</code></pre>
-        <a href="https://ayulume.is-a.dev"><img src="images/buttons/button.gif"></a>
+      </div>
+      <br><br>
+      <div id="container">
+        <iframe width="100" height="300" style="border:none" src="https://dogspit.nekoweb.org/sidelink.html" name="sidelink"></iframe>
+        <iframe width="150" height="300" style="border:none" src="https://dogspit.nekoweb.org/sidelink.html" name="sidelink"></iframe>
+        <iframe width="100" height="300" style="border:none" src="https://dogspit.nekoweb.org/sidelink.html" name="sidelink"></iframe>
+        <iframe src="https://john.citrons.xyz/embed?ref=https://ayulume.is-a.dev" style="margin-left:auto;display:block;margin-right:auto;max-width:369px;width:100%;height:46px;border:none;"></iframe>
       </div>
     </div>
   </div>
